@@ -160,10 +160,11 @@ function increaseIntensityFire() {
 
     for (let column = 0; column <= fireWidth; column++) {
 
-        // Get the last row
+        // Get the index of the overflown pixel (array+1)
         const overflowPixelIndex = fireWidth * fireHeight;
+        // Get the last row of pixels
         const pixelIndex = (overflowPixelIndex - fireWidth) + column;
-
+       
         // Get the current intensity of the fire
         const currentFireIntensity = firePixelsArray[pixelIndex];
         
@@ -190,8 +191,9 @@ function decreaseIntensityFire() {
 
     for (let column = 0; column <= fireWidth; column++) {
 
-        // Get the last row
+        // Get the index of the overflown pixel (array+1)
         const overflowPixelIndex = fireWidth * fireHeight;
+        // Get the last row of pixels
         const pixelIndex = (overflowPixelIndex - fireWidth) + column;
 
         // Get the current intensity of the fire
@@ -256,7 +258,6 @@ document.body.onkeyup = function(e) {
         createFireSource();
     }
 });
-
 
 main();
 
