@@ -130,7 +130,7 @@ function createFireSource() {
 
     for (let column = 0; column <= fireWidth; column++) {
         
-        // Get the index of the current pixel
+        // Get the index of the overflown pixel (array+1)
         const overflowPixelIndex = fireWidth * fireHeight;
         // Demonstrate 2D pixelIndex using 1D calculation for the line at the bottom of the screen
         const pixelIndex = (overflowPixelIndex - fireWidth) + column;
@@ -145,7 +145,7 @@ function destroyFireSource() {
     
     for (let column = 0; column <= fireWidth; column++) {
     
-        // Get the index of the current pixel
+        // Get the index of the overflown pixel (array+1)
         const overflowPixelIndex = fireWidth * fireHeight;
         // Demonstrate 2D pixelIndex using 1D calculation for the line at the bottom of the screen
         const pixelIndex = (overflowPixelIndex - fireWidth) + column;
