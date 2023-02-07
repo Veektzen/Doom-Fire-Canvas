@@ -3,7 +3,7 @@
  * 
  * JavaScript implementation of the fire effect from "doom-fire.com" using HTML Canvas element.
  * Author: Manos Veek
- * Last update: 02 Feb 2023
+ * Last update: 07 Feb 2023
  * 
  * 
  * The fire effect can be configured with the following buttons:
